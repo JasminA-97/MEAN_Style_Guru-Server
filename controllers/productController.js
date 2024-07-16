@@ -1,4 +1,5 @@
-const products = require('../models/productModel')
+const products = require('../models/productModel');
+const wishlists = require('../models/wishlistModel');
 
 //get all products
 exports.getAllProductsController = async(req,res)=>{
@@ -23,3 +24,4 @@ exports.getAProductController = async(req,res)=>{
         res.status(401).json(err)
     }
 }
+
